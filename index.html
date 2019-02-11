@@ -43,7 +43,7 @@
             <li><button class="dataButton" id="bnbDaily">BINANCE COIN - BNB</button><br></li>
 
             <!-- #10 BSV -->
-            <li><button class="dataButton" id="bsvDaily">BITCOIN SV - BSV</button><br></li>
+            <li><button class="dataButton" id="adaDaily">CARDANO - ADA</button><br></li>
         </ol>
         <br>
 
@@ -61,17 +61,26 @@
     </div>
 
     <h2>Cryptocurrency Converter</h2>
-    <form id="cryptoConvert" action="/action_page.php">
-        First name: <input type="text" name="fname"><br>
-        Last name: <input type="text" name="lname"><br><br>
-        <input type="button" onclick="myFunction()" value="Submit">
+    <form>
+        CURRENCY 1: <input type="text" id="crypto1"><br>
+        CURRENCY 2: <input type="text" id="crypto2"><br><br>
+        <input type="button" value="Submit" onclick="convert()">
     </form>
     
+    <div id="convertData"></div>
     
+    <script src="converter.js"></script>
     <script src="currentdate.js"></script>
-    <script src="bitcoin.js"></script>
-    <script src="xrp.js"></script>
+    <script src="topten/bitcoin.js"></script>
+    <script src="topten/xrp.js"></script>
+    <script src="topten/eth.js"></script>
+    <script src="topten/ltc.js"></script>
+    <script src="topten/eos.js"></script>
+    <script src="topten/bch.js"></script>
+    <script src="topten/trx.js"></script>
+    <script src="topten/xlm.js"></script>
+    <script src="topten/bnb.js"></script>
+    <script src="topten/ada.js"></script>
 
 </body>
-
 </html>

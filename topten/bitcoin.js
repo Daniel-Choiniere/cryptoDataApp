@@ -1,11 +1,25 @@
+// RETREIVING BTC DATA
+// let xrp = document.getElementById('xrpDaily').value;
+// let btc = document.getElementById('btcDaily').value;
+// console.log(xrp);
+// console.log(btc);
+
+// let url = "";
+// if (btc) {
+//     url = "https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=" + btc + "&market=USD&apikey=JCQV2KWHYVU535I7";
+// } else if (xrp) {
+//     url = "https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=" + xrp + "&market=USD&apikey=JCQV2KWHYVU535I7";
+// }
+
 /*global today*/
-// RETREIVING XRP DATA
-document.getElementById('xrpDaily').addEventListener('click', loadBtcDaily);
+document.getElementById('btcDaily').addEventListener('click', loadBtcDaily);
 
 // Load Daily Bitcoin Data
 function loadBtcDaily() {
+    
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=XRP&market=USD&apikey=JCQV2KWHYVU535I7', true);
+
+    xhr.open('GET', "https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=BTC&market=USD&apikey=JCQV2KWHYVU535I7", true);
     
     xhr.onload = function() {
         if (this.status == 200) {
@@ -39,3 +53,5 @@ function loadBtcDaily() {
     };
 xhr.send();        
 }   
+
+

@@ -1,11 +1,11 @@
 /*global today*/
-// RETREIVING XRP DATA
-document.getElementById('xrpDaily').addEventListener('click', loadBtcDaily);
+// RETREIVING LTC DATA
+document.getElementById('ltcDaily').addEventListener('click', loadLtcDaily);
 
 // Load Daily Bitcoin Data
-function loadBtcDaily() {
+function loadLtcDaily() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=XRP&market=USD&apikey=JCQV2KWHYVU535I7', true);
+    xhr.open('GET', 'https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=LTC&market=USD&apikey=JCQV2KWHYVU535I7', true);
     
     xhr.onload = function() {
         if (this.status == 200) {

@@ -1,11 +1,11 @@
 /*global today*/
 // RETREIVING XRP DATA
-document.getElementById('xrpDaily').addEventListener('click', loadBtcDaily);
+document.getElementById('adaDaily').addEventListener('click', loadAdaDaily);
 
 // Load Daily Bitcoin Data
-function loadBtcDaily() {
+function loadAdaDaily() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=XRP&market=USD&apikey=JCQV2KWHYVU535I7', true);
+    xhr.open('GET', 'https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=ADA&market=USD&apikey=JCQV2KWHYVU535I7', true);
     
     xhr.onload = function() {
         if (this.status == 200) {
