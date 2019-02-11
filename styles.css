@@ -5,13 +5,12 @@
     margin-bottom: 10px;
 }
 
-   
 .user ul {
     list-style: none;
 }
 
 .dataButton {
-    width: 250px;
+    width: 300px;
     font-size: 17px;
     font-weight: bold;
 }
@@ -20,3 +19,7 @@
     color: red;
     cursor: pointer; 
 }    
+
+.dataOutput {
+    width: 300px;
+}
