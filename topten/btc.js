@@ -44,7 +44,9 @@ function loadBtcDaily() {
                         '<li>Daily Low: $' + low + '</li>' + 
                         '<li>Daily Close: $' + close + '</li>' + 
                         '<li>Daily Volume: $' + volume + '</li>' + 
-                        '<li>Daily Marketcap: $' + marketcap + '</li>' +
+                        '<li>Daily Marketcap: $' + marketcap + '</li>' + 
+                        '<br>' +
+                        '<li><img src="https://images.pexels.com/photos/315788/pexels-photo-315788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=100"</li>' +
                         '</ul>' +
                          '</div>';
             

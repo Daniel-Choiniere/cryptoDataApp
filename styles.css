@@ -1,8 +1,11 @@
+ * {
+     text-align: center;
+ }
+ 
  .user{
-    display: flex;
-    background: #f4f5f7;
     padding: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .user ul {
@@ -20,6 +23,11 @@
     cursor: pointer; 
 }    
 
-.dataOutput {
+.dataDisplay {
     width: 300px;
+    padding-left: 500px;
+}
+
+.dataOutput {
+    list-style: none;
 }

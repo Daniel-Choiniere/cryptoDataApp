@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <img src="https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Smiley face">
     <title>Cryptocurrency Trading Data</title>
     <meata charset="UTF-8">
         <meta http-equiv="x-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css" type="text/css">
-
 </head>
 
 <body>
     <h1>Top 10 Cryptocurrencies by Market Capitalization</h1>
-    <br>
     <h3>Select a cryto asset from the list to see previous days market data.</h3>
+    <div id="dateDisplay"></div>
     <div>
         <ol class="dataOutput">
             <!-- #1 BITCOIN -->
             <li><button class="dataButton" id="btcDaily" value="BTC">BITCOIN - BTC</button><br></li>
-
             <!-- #2 XRP -->
             <li><button class="dataButton" id="xrpDaily" value="XRP">RIPPLE - XRP</button><br></li>
-
             <!-- #3 ETH -->
             <li><button class="dataButton" id="ethDaily">ETHEREUM - ETH</button><br></li>
-
             <!-- #4 LTC -->
             <li><button class="dataButton" id="ltcDaily">LITECOIN - LTC</button><br></li>
-
             <!-- #5 EOS -->
             <li><button class="dataButton" id="eosDaily">EOS - EOS</button><br></li>
-
             <!-- #6 BCH -->
             <li><button class="dataButton" id="bchDaily">BITCOIN CASH- BCH</button><br></li>
-
             <!-- #7 TRX -->
             <li><button class="dataButton" id="trxDaily">TRON - TRX</button><br></li>
-
             <!-- #8 XLM -->
             <li><button class="dataButton" id="xlmDaily">STELLAR LUMENS - XLM</button><br></li>
-
             <!-- #9 BND -->
             <li><button class="dataButton" id="bnbDaily">BINANCE COIN - BNB</button><br></li>
-
             <!-- #10 BSV -->
             <li><button class="dataButton" id="adaDaily">CARDANO - ADA</button><br></li>
         </ol>
-        <br>
-
-        <!--<form>-->
-        <!--    <select id="cryptoForm">-->
-        <!--      <option value="BTC">BITCOIN - BTC</option>-->
-        <!--      <option value="XRP">RIPPLE - XRP</option>-->
-        <!--      <option value="ETH">ETHEREUM -ETH</option>-->
-        <!--      <option value="LTC">LITECOIN - LTC</option>-->
-        <!--      <input id="cryptoSubmit" type="button" name="submit" value="GET MARKET DATA">-->
-        <!--    </select><br>-->
-        <!--</form>-->
         
         <div id="dataDisplay"></div>
     </div>
 
+    <!-- FORM TO GET AMOUNT TO BE CONVERTED AND CURRENCIES TO AND FROM FROM USER -->
     <h2>Cryptocurrency Converter</h2>
     <form>
-        CURRENCY 1: <input type="text" id="crypto1"><br>
-        CURRENCY 2: <input type="text" id="crypto2"><br><br>
+        CURRENCY 1: <input type="text" id="crypto1">&nbsp&nbsp&nbsp
+        CURRENCY 2: <input type="text" id="crypto2">
+        <br>
+        AMOUNT:     <input type="text" id="crypto1Value">
+        <br>
         <input type="button" value="Submit" onclick="convert()">
     </form>
-    
+    <br>
     <div id="convertData"></div>
     
     <script src="converter.js"></script>
     <script src="currentdate.js"></script>
-    <script src="topten/bitcoin.js"></script>
+    <script src="topten/btc.js"></script>
     <script src="topten/xrp.js"></script>
     <script src="topten/eth.js"></script>
     <script src="topten/ltc.js"></script>
